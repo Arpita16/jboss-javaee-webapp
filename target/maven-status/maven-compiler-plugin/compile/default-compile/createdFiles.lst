@@ -1,0 +1,14 @@
+org\jboss\tools\examples\rest\JaxRsActivator.class
+library\rest\Member_.class
+library\rest\MemberDAO.class
+library\rest\Book.class
+library\rest\LoanDAO.class
+library\rest\BookDAO.class
+library\rest\Loan_.class
+library\rest\BookRest.class
+library\rest\Member.class
+library\rest\Book_.class
+library\rest\LoanRest.class
+org\jboss\tools\examples\util\Resources.class
+library\rest\Loan.class
+library\rest\MemberRest.class
