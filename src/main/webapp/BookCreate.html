@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookCreatePage</title>
+<style>
+body {
+    background-color: lightblue;
+    font-family: Times New Roman;
+	font-size: 20px;
+}
+
+h1 {
+    color: white;
+    
+}
+
+.container {
+ 
+  width: 100%;
+  margin:80px;
+
+  
+}
+.text {
+    font-size: 14pt;
+    height: 52px;
+    width : 500px;
+}
+   
+   label {
+    width:150px;
+    clear:left;
+    text-align:left;
+    padding-right:5px;
+}
+
+input, label {
+    float:left;
+    margin:10px 10px 10px 0;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h3>Fill in the following details to create a Book:</h3>
+<div class="text">
+<label for ="isbn">ISBN No</label> 
+<input type ="text" name="isbn" id="isbn"  /><br></br> 
+<label for ="title">Title</label> 
+<input type ="text" name="title" id="title" /><br></br> 
+<label for ="genre">Genre</label>
+<input type ="text" name="genre" id="genre" /><br></br> 
+<label for ="author">Author</label> 
+<input type ="text" name="author" id="author" /><br></br> 
+<label for ="bookcopy">No. of Copies</label>
+<input type ="text" name="bookcopy" id="bookcopy" /><br></br> 
+<label for ="shelfno">Shelf No.</label> 
+<input type ="text" name="shelfno" id="shelfno" /><br></br> 
+<label for="type">Status</label>
+<select id="type" name="type">
+<option value="">Select Status</option>
+<option value="author">Available</option>
+<option value="title">Not Available</option>
+</select><br></br> <br></br> 
+
+<button onclick="myFunction()">Submit</button>
+
+<script>
+function myFunction() {
+    alert("1 Book created!!!");
+}
+</script>
+
+</div>
+</div>
+</body>
+</html>

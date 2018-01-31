@@ -36,7 +36,7 @@ public class MemberRest {
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response createMember(Member member) throws URISyntaxException {
 		memberService.createMember(member);
-		return Response.created(new URI("localhost:8080/webservice/rest/member")).build();
+		return Response.created(new URI("localhost:8080/jboss-javaee-webapp/rest/member")).build();
 	}
 	
 	@GET
@@ -50,7 +50,7 @@ public class MemberRest {
 	@Path("/updateaddress/{memberId}/{address}/")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response updateById(@PathParam("memberId")long memberId, @PathParam("address")String address) throws URISyntaxException {
-		Response.created(new URI("localhost:8080/webservice/rest/member/"+memberId)).build();
+		Response.created(new URI("localhost:8080/jboss-javaee-webapp/rest/member/"+memberId)).build();
 		return Response.ok(memberService.updateById(memberId, address)).build();
 	}
 	

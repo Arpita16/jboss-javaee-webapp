@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title>MemberSearch</title>
+<style>
+body {
+    background-color: lightblue;
+	font-family: Times New Roman;
+	font-size: 20px;
+}
+.button {
+    background-color: #e7e7e7; color: black;
+    border: none;
+    color: white;
+    padding: 50px 80px;
+   align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.container{
+text-align:center;
+}
+
+
+
+</style>
+<body>
+<form id="searchform">
+
+<label for="query">Enter Last Name<span></span></label><input name="query" id="query" />
+<input type="submit" value="search"><br></br>
+</form>
+
+<table style="width:100%">
+  <tr>
+  <th>Member ID</th>
+    <th>First Name</th>
+    <th>Last Name</th> 
+    <th>Book ID</th>
+	<th>Title</th>
+	<th>Author</th>
+  </tr>
+
+
+
+<tbody id="resultbody"><tr><td colspan="2">  </td></tr></tbody>
+</table>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="myscript.js"></script>
+</body>
+</html>

@@ -28,8 +28,8 @@
       <jta-data-source>java:/MySqlDS</jta-data-source>
       <properties>
          <!-- Properties for Hibernate -->
-         <property name="hibernate.hbm2ddl.auto" value="upadte" />
-         <property name="hibernate.show_sql" value="update" />
+         <property name="hibernate.hbm2ddl.auto" value="droptable" />
+         <property name="hibernate.show_sql" value="droptable" />
       </properties>
    </persistence-unit>
 </persistence>
